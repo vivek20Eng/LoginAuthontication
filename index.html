@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+<div class="card">
+    <div class="inner-box"id="card">
+        <div class="card-front">
+            <h2>Login</h2>
+            <button type="submit"class="submit-btn">Submit</button>
+            <button type="button"class="btn"onclick="openreg()">I'm new here</button>
+        </div>
+
+        <div class="card-back">
+            <h2>Signup</h2>
+            <button type="submit"class="submit-btn"onclick="openlog()">Submit</button>
+        </div>
+    </div>
+</div>
+        
+    </div>
+    <script>
+        var card=document.getElementById("card");
+        function openreg(){
+            card.style.transform="rotateY(-180deg)";
+        }
+        function openlog(){
+            card.style.transform="rotateY(0deg)";
+        }
+    </script>
+</body>
+</html>
